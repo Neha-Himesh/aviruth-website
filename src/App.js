@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+import React from 'react';
+import {BrowserRouter as Router, Routes, Route, Form} from 'react-router-dom';
 import './App.css';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Courses from './components/Courses';
+import Internships from './components/Internships';
+import ContactForm from './components/ContactForm';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Optional: For components like navbar toggle
+import ContactForm1 from './components/ContactForm1';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <Router>
+    //   <Navbar />
+    //   <div className="content">
+    //     <Routes>
+    //       <Route path="/" element={<Home />} />
+    //       <Route path="/about" element={<About />} />
+    //       <Route path="/contact" element={<Contact />} />
+    //       <Route path="/courses" element={<Courses /> } />
+    //       <Route path="/internships" element={<Internships />} />
+    //     </Routes>
+    //   </div>
+    //   <Footer />
+    // </Router>
+    <Router>
+      <Navbar />
+      <div className="content">
+        <Home />
+        <About />
+        <Courses />
+        <Internships />
+        <ContactForm />
+        <ContactForm1 />
+      </div>
+      <Footer />
+    </Router>
   );
 }
 

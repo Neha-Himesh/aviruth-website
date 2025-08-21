@@ -1,0 +1,19 @@
+.scroll-text-message span {
+    color: #888; /* some neutral gray */
+    transition: color 0.5s ease-in-out;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900;
+    word-spacing: 30px;
+    font-optical-sizing: auto;
+    margin-right: 10px; 
+}
+
+.scroll-text-section{
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.internship-subject-img{
+    object-fit: cover;
+}

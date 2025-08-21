@@ -1,0 +1,38 @@
+.hover-icons{
+    position: fixed;
+    z-index: 2;
+    right: 0%;
+    background-color: rgb(173, 170, 131);
+    border-radius: 50% 0px 0px 50%;
+    transform: translateX(62%);
+    width: max-content;
+}
+.hover-icon-1{
+    top: 50%; 
+}
+.hover-icon-1 img {
+    width: 30px;
+} 
+.hover-icon-2{
+    top: 65%; 
+}
+.hover-icon-2 img{
+    width: 25px;
+}
+.hover-icon-3{
+    top: 35%; 
+}
+.hover-icon-3 img{
+    width: 30px;
+}
+.hover-icon-4{
+    top: 20%; 
+    transform: translateX(73%);
+}
+.hover-icon-4 img{
+    width: 30px;
+}
+.icon-width {
+    width: fit-content !important;
+    background-color: rgb(145, 145, 157);
+}

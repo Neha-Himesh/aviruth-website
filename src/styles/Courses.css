@@ -1,0 +1,58 @@
+.scroll-text-message span {
+    color: #888; /* some neutral gray */
+    transition: color 0.5s ease-in-out;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900;
+    word-spacing: 30px;
+    font-optical-sizing: auto;
+    margin-right: 10px; 
+}
+
+.scroll-text-section{
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.fixed-img{
+    object-fit: cover;
+    width: 300px;
+    height: 250px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* reduce clickable area */
+  top: 50%;
+ 
+  background-color: transparent; /* optional */
+}
+.carousel-control-prev{
+    transform: translateX(-60%);
+}
+.carousel-control-next{
+    transform: translateX(60%);
+}
+
+.carousel-control-prev {
+  left: -2%; /* move it slightly outside the carousel */
+}
+
+.carousel-control-next {
+  right: -2%; /* move it slightly outside the carousel */
+}
+.carousel-control-prev-icon{
+  background-color:black;
+}
+.carousel-control-next-icon{
+    background-color:black;
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%; /* better for mobile */
+    left: 0;
+    right: 0;
+  }
+}
