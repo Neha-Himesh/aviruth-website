@@ -17,8 +17,7 @@ function SyllabusPage() {
         <AccordionItem
           key={index}
           id={`${courseId}-item-${index}`}
-          title={item.title}
-        >
+          title={item.title}>
           {item.body}
         </AccordionItem>
       ))}

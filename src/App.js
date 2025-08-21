@@ -12,6 +12,7 @@ import ContactForm from './components/ContactForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Optional: For components like navbar toggle
 import ContactForm1 from './components/ContactForm1';
+import SyllabusPage from "./pages/SyllabusPage";
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
         <Internships />
         <ContactForm />
         <ContactForm1 />
+        <Routes>
+          <Route path="/" element={<Courses />} />
+          <Route path="/syllabus/:courseId" element={<SyllabusPage />} />
+        </Routes>
       </div>
       <Footer />
     </Router>

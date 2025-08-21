@@ -25,9 +25,6 @@ function Courses(){
                                             <h5 className="card-title fw-bold">Full Stack Developer</h5>
                                             <p className="card-text">Complete end to end course to develop websites handling client and server.In addition to mastering HTML and CSS, he/she also knows how to program a browser, server, database.</p>
                                             <Link to="/syllabus/fullstack">Full Stack Developer</Link><a href="#" className="btn btn-primary">Learn More</a>
-                                            <Routes>
-                                                <Route path="/syllabus/:courseId" element={<SyllabusPage />} />
-                                            </Routes>
                                         </div>
                                     </div>
                                 </div>
