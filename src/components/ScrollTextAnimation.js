@@ -39,7 +39,7 @@ function ScrollTextAnimation({ message, darkMode = false }) {
     // ScrollMagic Scene
     const scrollTextScene = new ScrollMagic.Scene({
       triggerElement: section,
-      triggerHook: 1/ window.innerHeight, //0
+      triggerHook: 1/ window.innerHeight , //0
       duration: wordSpans.length * window.innerHeight * 0.02//scrollDuration,
     })
       .setPin(section)
@@ -75,9 +75,9 @@ function ScrollTextAnimation({ message, darkMode = false }) {
   return (
     <section className="scroll-text-section mt-5" ref={sectionRef} data-dark={darkMode}>
       <div className="container mt-5">
-        <div className="row m-5">
-          <div className="col-8 offset-2 ">
-            <p className="scroll-text-message" ref={quoteRef}></p>
+        <div className="row m-md-5">
+          <div className="col-md-8 col-12 offset-md-2">
+            <p className="scroll-text-message text-center" ref={quoteRef}></p>
           </div>
         </div>
       </div>

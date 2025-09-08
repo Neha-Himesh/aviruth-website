@@ -32,14 +32,17 @@ function App() {
     <Router>
       <Navbar />
       <div className="content">
-        <Home />
-        <About />
-        <Courses />
-        <Internships />
-        <ContactForm />
-        <ContactForm1 />
         <Routes>
-          <Route path="/" element={<Courses />} />
+          <Route path="/" element={
+            <>
+              <Home />
+              <About />
+              <Courses />
+              <Internships />
+              <ContactForm />
+              <ContactForm1 />
+            </>
+          } />
           <Route path="/syllabus/:courseId" element={<SyllabusPage />} />
         </Routes>
       </div>

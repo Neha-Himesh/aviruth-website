@@ -48,12 +48,12 @@ function ContactForm() {
 							className="form-input"/>
 					</div>
 
-					<div class="form-group">
-						<label for="demo-topics" class="form-label">Demo for below topics (Optional)</label>
+					<div className="form-group">
+						<label htmlFor="demo-topics" className="form-label">Demo for below topics (Optional)</label>
 						<select
 							name="demo-topics"
 							id="demo-topics"
-							class="form-select"
+							className="form-select"
 							required>
 							<option value="product-demo">Internship</option>
 							<option value="pricing">Training</option>

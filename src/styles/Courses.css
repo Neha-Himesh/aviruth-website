@@ -1,7 +1,6 @@
 .scroll-text-message span {
     color: #888; /* some neutral gray */
     transition: color 0.5s ease-in-out;
-    font-size: 3.2rem;
     font-style: normal;
     font-weight: 900;
     word-spacing: 30px;
@@ -29,30 +28,55 @@
 }
 .carousel-control-prev{
     transform: translateX(-60%);
+    left: -2%;  /* move it slightly outside the carousel */
 }
 .carousel-control-next{
     transform: translateX(60%);
+    right: -2%; /* move it slightly outside the carousel */
+}
+.carousel-control-next-mobile-tablet{
+  left: 85% !important;
 }
 
-.carousel-control-prev {
-  left: -2%; /* move it slightly outside the carousel */
-}
-
-.carousel-control-next {
-  right: -2%; /* move it slightly outside the carousel */
-}
 .carousel-control-prev-icon{
   background-color:black;
 }
 .carousel-control-next-icon{
     background-color:black;
 }
+.carousel-indicators{
+  top: 95%;
+}
+.carousel-indicators [data-bs-target]{
 
+  background-color: black !important;
+}
 @media (max-width: 768px) {
-  .carousel-control-prev,
+ .carousel-control-prev,
   .carousel-control-next {
     width: 10%; /* better for mobile */
     left: 0;
     right: 0;
   }
 }
+/* @media screen and (max-width: 575px){
+  .scroll-text-message span {
+      font-size: 1.7rem !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  .scroll-text-message span {
+      font-size: 2.1rem !important;
+  }
+}
+@media screen and (min-width: 768px){
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%; /* better for mobile 
+    left: 0;
+    right: 0;
+  }
+  .scroll-text-message span {
+      font-size: 3.2xrem !important;
+  }
+} */

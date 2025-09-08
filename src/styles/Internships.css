@@ -1,7 +1,6 @@
 .scroll-text-message span {
     color: #888; /* some neutral gray */
     transition: color 0.5s ease-in-out;
-    font-size: 3.2rem;
     font-style: normal;
     font-weight: 900;
     word-spacing: 30px;
@@ -17,3 +16,18 @@
 .internship-subject-img{
     object-fit: cover;
 }
+/* @media screen and (max-width: 575px){
+    .scroll-text-message span {
+        font-size: 1.7rem !important;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .scroll-text-message span {
+        font-size: 2.1rem !important;
+    }
+}
+@media screen and (min-width: 769px){
+    .scroll-text-message span {
+        font-size: 3.2rem !important;
+    }
+} */
